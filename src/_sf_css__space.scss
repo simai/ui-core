@@ -1,0 +1,16 @@
+// SIMAI Framework
+// https://simai.io
+
+// SPACE CSS VARIABLES
+
+:root {
+	// Space size variables
+	// Space size have differents value for desktop and mobile devices
+	@each $breakpoint in map-keys($breakpoint-device-array) {
+		@include breakpoint-device-media($breakpoint) {
+			@each $space-size-level, $space-size in map-get($space-size-device-array, $breakpoint) {
+				--sf-space-#{$space-size-level}: var(--sf-#{$space-size});
+			}
+		}
+	}
+}

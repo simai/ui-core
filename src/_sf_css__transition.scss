@@ -1,0 +1,27 @@
+
+// SIMAI Framework
+// https://simai.io
+
+// TRANSITION PRESET
+
+// Default Global Variables
+//    --sf-empty — use for set empty value in concatenate styles
+//    --sf-alfa — use for set opacity color
+:root {
+  --sf-transition--property: all;
+  --sf-transition--duration: 300ms;
+  --sf-transition--timing-function: ease-in;
+  --sf-transition--delay: 0ms;
+
+  @each $duration-var-name, $duration-var-value in $duration-var-array {
+    --sf-duration-#{$duration-var-name}: #{$duration-var-value}S;
+  }
+
+
+  --sf-animation: cubic-bezier(.25,.8,.25,1);
+}
+
+
+// :root * {
+//   transition: var(--sf-duration-normal) var(--sf-animation);
+// }

@@ -1,0 +1,13 @@
+// SIMAI Framework
+// https://simai.io
+
+// SPACE VARIABLE
+
+// Array space size for mobile and desctop divices
+
+// Filter Blur
+:root {
+    @each $blur-var-name, $blur-var-value in $filter-blur-var-array {
+        --sf-blur-#{$blur-var-name}: var(--sf-#{$blur-var-value});
+    }
+}

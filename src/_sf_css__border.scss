@@ -1,0 +1,80 @@
+// SIMAI Framework
+// https://simai.io
+
+// BORDER CSS
+
+:root {
+	@each $breakpoint in map-keys($breakpoint-device-array) {
+		@include breakpoint-device-media($breakpoint) {
+			@each $border-var, $radius-value in map-get($border-radius-array, $breakpoint) {
+				--sf-radius-#{$border-var}: #{$radius-value};
+			}
+		}
+	}
+
+	// Border Variables
+	--sf-border--width: 0;
+	--sf-border--style: solid;
+	--sf-border--color: var(--sf-transparent);
+
+	// Default Border Property
+	border: var(--sf-border--width) var(--sf-border--style) var(--sf-border--color);
+	border-color: var(--sf-outline-variant);
+
+	--sf-focus--offset: var(--sf-a0);
+	--sf-focus--style: solid;
+	--sf-focus--width: var(--sf-a4);
+}
+
+:focus {
+	outline-color: var(--sf-focus-color);
+	outline-offset: var(--sf-focus-offset);
+	outline-style: var(--sf-focus-style);
+	outline-width: var(--sf-focus-width);
+}
+
+.border {
+	border: var(--sf-a1) var(--sf-outline-variant) solid;
+}
+
+.border-none {
+	border: var(--sf-a1) var(--sf-transparent) solid;
+}
+
+.divider > :not([hidden]) ~ :not([hidden]) {
+	border: var(--sf-px) var(--sf-outline-variant) solid;
+}
+
+.divider-none > :not([hidden]) ~ :not([hidden]) {
+	border-width: var(--sf-0);
+}
+
+.outline {
+	outline: var(--sf-px) var(--sf-outline-variant) solid;
+}
+
+.outline-none {
+	outline-width: var(--sf-0);
+}
+
+@each $key, $value in ('sm':'sm','md':'md','lg':'lg','xl':'xl') {
+	@include breakpoint-media($key) {
+		$infix: breakpoint-infix($key, $breakpoint-array);
+
+		.#{$infix}border {
+			border: var(--sf-a1) var(--sf-outline-variant) solid;
+		}
+		
+		.#{$infix}border-none {
+			border: var(--sf-a1) var(--sf-transparent) solid;
+		}
+	}
+}
+
+.hover\:border:hover {
+	border: var(--sf-a1) var(--sf-outline-variant) solid;
+}
+
+.hvoer\:border-none:hover {
+	border: var(--sf-a1) var(--sf-transparent) solid;
+}

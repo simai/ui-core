@@ -1,0 +1,65 @@
+// SIMAI Framework
+// https://simai.io
+
+// SCROLLBAR
+
+// Set scrollbar settings
+// @include layer-priority(base,default) {
+	*, .scroll-border {
+		--sf-scroll-bg-track: var(--sf-surface-transparent-overlay);
+		--sf-scroll-bg-thumb: var(--sf-color--surface-lowest);
+		--sf-scroll-bg-width: var(--sf-b4);
+		--sf-scroll-thumb-width: var(--sf-a6);
+		--sf-scroll-radius: var(--sf-d6);
+		
+		// for mozila brouser 
+		scrollbar-width: var(--sf-scroll-bg-width);
+		scrollbar-color: var(--sf-scroll-bg-thumb) var(--sf-scroll-bg-track);
+
+		// for webkit brousers
+		&::-webkit-scrollbar {
+			width: var(--sf-scroll-bg-width);
+			height: var(--sf-scroll-bg-width);
+		}
+		// slider
+		&::-webkit-scrollbar-thumb {
+			height: var(--sf-scroll-thumb-width);
+			border: var(--sf-a4) solid var(--sf-transparent);
+			background-clip: padding-box;
+			border-radius: var(--sf-scroll-radius);
+			background-color: var(--sf-scroll-bg-track);
+		}
+		&::-webkit-scrollbar-button {
+			width: 0;
+			height: 0;
+			display: none;
+		}
+		&::-webkit-scrollbar-corner {
+			background-color: var(--sf-transparent);
+		}
+		// background
+		&::-webkit-scrollbar-track {
+			background-color: var(--sf-scroll-bg-thumb);
+			border-radius: 0;
+		}
+		
+		// smooth scroll
+		scroll-behavior: smooth;
+	}
+
+	// body * {
+	// 	--sf-scroll-bg-width: var(--sf-a6);
+	// 	--sf-scroll-radius: var(--sf-d6);
+
+	// 	&::-webkit-scrollbar {
+	// 		width: var(--sf-scroll-bg-width);
+	// 		height: var(--sf-scroll-bg-width);
+	// 	}    
+	// 	&::-webkit-scrollbar-thumb {
+	// 		border: var(--sf-a0) solid transparent;
+	// 	}
+	// 	&::-webkit-scrollbar-track {
+	// 		border-radius: var(--sf-scroll-radius);
+	// 	}
+	// }
+// }

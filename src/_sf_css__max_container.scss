@@ -1,0 +1,13 @@
+// SIMAI Framework
+// https://simai.io
+
+// BORDER CSS
+
+:root {
+	$breakpoint: 'desktop';
+	@include breakpoint-device-media($breakpoint) {
+		@each $m-container-var, $m-container-value in map-get($container-max-array, $breakpoint) {
+			--sf-container-#{$m-container-var}--size-max: var(--sf-#{$m-container-value});
+		}
+	}
+}

@@ -1,0 +1,26 @@
+// SIMAI Framework
+// https://simai.io
+
+// SPACE CSS VARIABLES
+
+$breakpoint-var-array: (
+	'sm' : 'g8',
+	'md' : 'h2',
+	'lg' : 'h5',
+	'xl' : 'h8',
+	'xxl' : 'i2',
+);
+
+:root {
+	// Space size variables
+	// Space size have differents value for desktop and mobile devices
+
+	@each $break-var, $break-value in $breakpoint-var-array {
+
+		@include breakpoint-media($break-var) {
+			$infix: breakpoint-infix($break-var, $breakpoint-array);
+
+			--sf-breakpoint-#{$break-var}: var(--sf-#{$break-value});
+		}
+	}
+}

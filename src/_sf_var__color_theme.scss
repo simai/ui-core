@@ -1,0 +1,169 @@
+// SIMAI Framework
+// https://simai.io
+
+// COLOR
+
+// Color RGB Value
+// For example gray-0: rgb(250,251,252)
+$color-token-array: (
+    'surface': (
+        'light': (
+            'highest' : --sf-neutral-100,
+            'high' : --sf-neutral-98,
+            'default' : --sf-neutral-96,
+            'low' : --sf-neutral-94,
+            'lowest' : --sf-neutral-92,
+            'inverse' : --sf-neutral-20,
+            'variant' : --sf-neutral-87,
+        ),
+        'dark': (
+            'highest' : --sf-neutral-22,
+            'high' : --sf-neutral-18,
+            'default' : --sf-neutral-14,
+            'low' : --sf-neutral-10,
+            'lowest' : --sf-neutral-6,
+            'inverse' : --sf-neutral-90,
+            'variant' : --sf-neutral-30,
+        )
+    ),
+    'text': (
+        'light': (
+            'main': --sf-neutral-20,
+            'subordinate': --sf-neutral-40,
+            'additional': --sf-neutral-60,
+            'inverse': --sf-neutral-96,
+        ),
+        'dark': (
+            'main': --sf-neutral-90,
+            'subordinate': --sf-neutral-50,
+            'additional': --sf-neutral-70,
+            'inverse': --sf-neutral-6,
+        ),
+    ),
+    'primary': (
+        'light': (
+            'default': --sf-primary-50,
+            'inverse': --sf-primary-98,
+            'tonal': --sf-primary-90,
+            'contrast': --sf-primary-20,
+        ),
+        'dark': (
+            'default': --sf-primary-80,
+            'inverse': --sf-primary-6,
+            'tonal': --sf-primary-20,
+            'contrast': --sf-primary-90,
+        ),
+    ),
+    'secondary': (
+        'light': (
+            'default': --sf-secondary-50,
+            'inverse': --sf-secondary-98,
+            'tonal': --sf-secondary-90,
+            'contrast': --sf-secondary-20,
+        ),
+        'dark': (
+            'default': --sf-secondary-80,
+            'inverse': --sf-secondary-6,
+            'tonal': --sf-secondary-30,
+            'contrast': --sf-secondary-90,
+        ),
+    ),
+    'tertiary': (
+        'light': (
+            'default': --sf-tertiary-50,
+            'inverse': --sf-tertiary-98,
+            'tonal': --sf-tertiary-90,
+            'contrast': --sf-tertiary-20,
+        ),
+        'dark': (
+            'default': --sf-tertiary-80,
+            'inverse': --sf-tertiary-6,
+            'tonal': --sf-tertiary-30,
+            'contrast': --sf-tertiary-90,
+        ),
+    ),
+    'outline': (
+        'light': (
+            'main': --sf-neutral-60,
+            'subordinate': --sf-neutral-70,
+            'additional': --sf-neutral-80,
+            'inverse': --sf-neutral-96,
+        ),
+        'dark': (
+            'main': --sf-neutral-40,
+            'subordinate': --sf-neutral-30,
+            'additional': --sf-neutral-30,
+            'inverse': --sf-neutral-6,
+        ),
+    ),
+    'link': (
+        'light': (
+            'default': --sf-blue-40,
+            'hover': --sf-blue-50,
+            'active': --sf-blue-30,
+            'visited': --sf-purple-30,
+        ),
+        'dark': (
+            'default': --sf-blue-50,
+            'hover': --sf-blue-60,
+            'active': --sf-blue-40,
+            'visited': --sf-purple-40,
+        ),
+    ),
+    'info': (
+        'light': (
+            'default': --sf-blue-50,
+            'inverse': --sf-blue-98,
+            'tonal': --sf-blue-90,
+            'contrast': --sf-blue-20,
+        ),
+        'dark': (
+            'default': --sf-blue-80,
+            'inverse': --sf-blue-6,
+            'tonal': --sf-blue-30,
+            'contrast': --sf-blue-90,
+        ),
+    ),
+    'success': (
+        'light': (
+            'default': --sf-green-50,
+            'inverse': --sf-green-98,
+            'tonal': --sf-green-90,
+            'contrast': --sf-green-20,
+        ),
+        'dark': (
+            'default': --sf-green-80,
+            'inverse': --sf-green-6,
+            'tonal': --sf-green-30,
+            'contrast': --sf-green-90,
+        ),
+    ),
+    'warning': (
+        'light': (
+            'default': --sf-yellow-50,
+            'inverse': --sf-yellow-98,
+            'tonal': --sf-yellow-90,
+            'contrast': --sf-yellow-20,
+        ),
+        'dark': (
+            'default': --sf-yellow-80,
+            'inverse': --sf-yellow-6,
+            'tonal': --sf-yellow-30,
+            'contrast': --sf-yellow-90,
+        ),
+    ),
+    'danger': (
+        'light': (
+            'default': --sf-red-50,
+            'inverse': --sf-red-98,
+            'tonal': --sf-red-90,
+            'contrast': --sf-red-20,
+        ),
+        'dark': (
+            'default': --sf-red-80,
+            'inverse': --sf-red-6,
+            'tonal': --sf-red-30,
+            'contrast': --sf-red-90,
+        ),
+    ),
+) !default;
