@@ -1,4 +1,4 @@
-### ** Connecting the Framework Core**
+### Connecting the Framework Core 
 
 The first step is to connect the main core of the **SIMAI Framework**. To do this, use the CDN. Insert the corresponding `<link>` tag into the `<head>` section of your HTML document:
 
