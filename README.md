@@ -1,32 +1,32 @@
 # SFLoader StandAlone
 
-**SFLoader** — это модульный загрузчик JavaScript/CSS-компонентов, предназначенный для автономного подключения UI-блоков без участия сервера.
+**SFLoader** is a modular JavaScript/CSS component loader designed for standalone integration of UI blocks without server involvement.
 
-Эта версия работает в режиме `standAlone`, без Ajax-запросов и генерации ассетов на сервере. Всё подгружается напрямую с CDN/статического хранилища.
+This version operates in `standAlone` mode, without Ajax requests and server-side asset generation. Everything is loaded directly from a CDN/static storage.
 
 ---
 
-## 🚀 Быстрый старт
+## 🚀 Quick Start
 
-1. Установите переменную `window.sfPath`, указывающую путь до каталога с компонентами:
+1. Set the `window.sfPath` variable to the path of the components directory:
 
 ```html
 <script>
-  window.sfPath = 'https://cdn.example.com/sf5/';
+  window.sfPath = 'https://cdn.jsdelivr.net/gh/simai/ui@main/distr/';
 </script>
 ```
 
-> Можно указывать относительный путь, например:  
-> `window.sfPath = 'https://cdn.jsdelivr.net/gh/simai/ui@main/distr/'`
+> You can use a relative path, for example:  
+> `window.sfPath = '/distr/'`
 
-2. Подключите ядро загрузчика в `<head>`:
+2. Include the core loader in the `<head>`:
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/simai/ui@main/distr/core/js/core.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/simai/ui@main/distr/core/css/core.css" />
 ```
 
-3. Загрузчик начнет выполнять работу автоматически:
+3. The loader will start working automatically:
 
 ```html
 <script>
@@ -36,19 +36,19 @@
 
 ---
 
-## 🧩 Как работает
+## 🧩 How It Works
 
-- Загрузчик ищет компоненты по DOM (по атрибутам);
-- Определяет необходимые JS/CSS;
-- Загружает их с `sfPath`;
-- Инициализирует компоненты автоматически.
+- The loader searches for components in the DOM (by attributes);
+- It determines the necessary JS/CSS;
+- It loads them from `sfPath`;
+- It initializes the components automatically.
 
 ---
 
-## 📁 Пример структуры
+## 📁 Example Structure
 
 ```
-sf5/
+distr/
 ├── core/
 │   ├── js/core.js
 │   └── css/core.css
@@ -68,7 +68,7 @@ sf5/
 
 ---
 
-## ⚙️ Пример компонентов в HTML
+## ⚙️ Example Components in HTML
 
 ```html
 <div sf-asset="modal"></div>
@@ -78,22 +78,22 @@ sf5/
 
 ---
 
-## 📦 Используемые параметры
+## 📦 Used Parameters
 
-| Параметр         | Описание                                |
-|------------------|-------------------------------------------|
-| `window.sfPath`  | Базовый путь до ассетов                  |
-
----
-
-## ✅ Поддержка
-
-- Нет зависимости от сервера;
-- Можно использовать с CDN, GitHub Pages, Vercel и др.;
-- Подходит для проектов без backend-сборки.
+| Parameter        | Description                              |
+|------------------|------------------------------------------|
+| `window.sfPath`  | Base path to assets                     |
 
 ---
 
-## 📜 Лицензия
+## ✅ Support
+
+- No server dependency;
+- Can be used with CDN, GitHub Pages, Vercel, and others;
+- Suitable for projects without backend builds.
+
+---
+
+## 📜 License
 
 MIT
