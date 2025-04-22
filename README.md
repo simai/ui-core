@@ -17,13 +17,13 @@
 ```
 
 > Можно указывать относительный путь, например:  
-> `window.sfPath = '/sf5/'`
+> `window.sfPath = 'https://cdn.jsdelivr.net/gh/simai/ui@main/distr/'`
 
 2. Подключите ядро загрузчика в `<head>`:
 
 ```html
-<script src="https://cdn.example.com/sf5/core/js/core.js"></script>
-<link rel="stylesheet" href="https://cdn.example.com/sf5/core/css/core.css" />
+<script src="https://cdn.jsdelivr.net/gh/simai/ui@main/distr/core/js/core.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/simai/ui@main/distr/core/css/core.css" />
 ```
 
 3. Загрузчик начнет выполнять работу автоматически:
