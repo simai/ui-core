@@ -1,0 +1,1 @@
+.scroll-transparent{--sf-scroll-bg-thumb: var(--sf-transparent)}.scroll-current{--sf-scroll-bg-thumb: var(--sf-current)}.scroll-surface{--sf-scroll-bg-thumb: var(--sf-on-surface)}.scroll-primary{--sf-scroll-bg-thumb: var(--sf-on-primary)}.scroll-secondary{--sf-scroll-bg-thumb: var(--sf-on-secondary)}.scroll-tertiary{--sf-scroll-bg-thumb: var(--sf-on-tertiary)}
